@@ -18,7 +18,8 @@ export const App = () => {
           {time.getFullYear()}/{time.getMonth() + 1}/{time.getDate()}{" "}
         </span>
         <span>
-          {time.getHours()}:{time.getMinutes()}
+          {time.getHours().toString().padStart(2, "0")}:
+          {time.getMinutes().toString().padStart(2, "0")}
         </span>
       </div>
     </>
